@@ -4,10 +4,13 @@ public class Jogador {
     int hp;
     int poder;
     //Métodos 
-    void atacar(int dano){
-        hp -= poder/2;
+    void atacar(String inimigo){
+        System.out.printf("Você atacou e causou %"+ poder/2 + "de dano no %s",inimigo);
     }
     void curar(int cura){
         hp += 10;
+    }
+    void levarDano(int receberDano){
+        
     }
 }
